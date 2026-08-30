@@ -1,0 +1,42 @@
+.slider{
+    position:relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    
+    
+}
+
+.slider img{
+    max-height: 800px;
+    max-width: 1000px;
+    display: none;
+    
+
+}
+
+img.displaySlide{
+    display: inline;
+    object-fit: contain;
+    
+}
+
+button{
+    height: 50px;
+    width: 50px;
+    font-family: "Outfit";
+    background-color: #cfcfcf;
+    border: none;
+    border-radius: 2rem;
+}
+
+button:hover{
+    background-color: #56c1ff;
+    transition: 200ms ease-in;
+    color: #fafafa;
+}

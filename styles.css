@@ -1,3 +1,423 @@
-p{
-    color: blueviolet;
+/* Univeral */
+.main{
+    padding-top: 2%;
+    width: 90%;
+    justify-self: center;
+}
+
+/* main body */
+body{
+    background-color: #fafafa;
+    margin: 0;
+    cursor: url('images/newCursor.png'), auto;
+    
+}
+/* top o' the page */
+.header{
+    background-color: #fafafa;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: center;
+    font-family: "Outfit";
+    width: 90%;
+    
+}
+
+.header a{
+    text-decoration: none;
+}
+
+@keyframes shake{
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(2deg);}
+    50% {transform: rotate(-2deg);}
+    75% {transform: rotate(2deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.title{
+    padding-top: 10px;
+    text-align: center;
+    font-family: "Funnel Display";
+    font-size: 20px;
+}
+
+.title:hover{
+    animation: shake 200ms linear;
+}
+
+.title h1{
+    margin: 0;
+}
+
+span.span-A {
+    color: #c00000;
+}
+
+span.span-B {
+    color: #56c1ff;
+}
+
+span.span-C {
+    background-color: #252f36;
+    color: #fafafa;
+}
+
+.title h1 a{
+    color: #252f36;
+}
+
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+nav{
+    width:50%;
+    justify-content: center;
+    align-items: center;
+}
+
+li a{
+    font-size:x-large;
+    color: #252f36;
+    font-weight:400;
+    padding: 5px 15px 5px 15px;
+}
+
+li a:hover  {
+    transition: 200ms ease-in;
+    background-color: #56c1ff;
+    color:#fafafa;
+    font-weight: 600;
+}
+
+hr {
+  border-style: solid;
+  border-width: 1px;
+  color: #252f36;
+}
+
+.dot{
+    width: 25px;
+    height: 25px;
+    background: rgba(250, 217, 72, 0.959);
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(25px, 25px);
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        
+        clip-path: inset(0 100% 100% 0);
+    }
+    to {
+        opacity: 1;
+        
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+/** intro page **/
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes bubble {
+    from{
+        scale: 0;
+    }
+    to{
+        scale: 1;
+    }
+}
+
+@keyframes out {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.chunk{
+    height: 550px;
+    
+}
+
+.central{
+    padding-top: 2%;
+    width: 70%;
+    justify-self: center;
+    
+}
+
+.center{
+    justify-content: center;
+    font-family: "Outfit";
+    animation: out linear both;
+    animation-timeline: view();
+    animation-range: cover 80% cover 87%;
+}
+
+
+
+.pfp{
+    border-radius: 50%;
+    width: 400px;
+    position: sticky;
+    top: 525px;
+    display: block;
+    margin-left: auto;
+    animation: bubble linear both;
+    animation-timeline: view();
+    animation-range: cover 20% cover 25%;
+}
+
+.intro_short{
+    background-color: #f0a61d;
+    width: 300px;
+    height: 300px;
+    position: sticky;
+    top: 100px;
+}
+
+.intro_long{
+    background-color: #35a0f8;
+    width: 1000px;
+    height: 400px;
+    justify-self: end;
+    position: sticky;
+    top: 100px;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: cover 10% cover 20%;
+}
+
+.intro_long_2{
+    background-color: #ff5a30;
+    width: 800px;
+    height: 400px;
+    position: sticky;
+    top: 525px;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 33%;
+}
+
+.bio{
+    font-size: x-large;
+    width: 775px;
+    line-height: 1.75;
+    position: sticky;
+    left: 300px;
+    top: 545px;   
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 30%;
+}
+
+@keyframes blink{
+    0%{opacity: 0; top: -210px;}
+    10%{opacity: 1; top: -210px;}
+    100%{opacity: 0; top: -180px;}
+}
+
+
+.goDown{
+    position: relative;
+    font-size: 250px;
+    text-align: center;
+    color: #fffccf;
+    animation: blink 1.5s ease 2 ;
+    animation-timeline: auto;
+    margin: -150px;
+    top: -190px;
+    opacity: 0;
+    
+}
+
+
+
+
+.welcome{
+    justify-self: end;
+    right: 520px;
+    position: sticky;
+    top: 100px;
+    animation: fade ease-in both;
+    animation-timeline: view();
+    animation-range: cover 15% cover 30%;
+    font-size: 145px;
+    font-weight: 500;
+    line-height: 1;
+    
+}
+
+
+
+.hello{
+    font-size: 100px;
+    z-index: 1;
+    position: sticky;
+    top: 285px;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: cover 11% cover 20%;
+}
+
+.big_guy{
+    height: 350px;
+    background-color: #252f36;
+    z-index: 1;
+}
+
+/* Sub-Page */
+.grid{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 25vh);
+    gap: 25px ;
+    padding-bottom: 30px;
+}
+
+
+.grid img{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    filter: drop-shadow(5px 5px 0px #cfcfcf);
+    animation: appear 1s ease;
+}
+
+
+.image-grid-big-2{
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.image-grid-col-2{
+    grid-column: span 2;
+    
+}
+
+.image-grid-row-2{
+    grid-row: span 2;
+    
+}
+
+.image-grid-square-2{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid > a > img:hover{
+    filter: drop-shadow(10px 10px 0px #56c1ff);
+    scale: 1.01;
+    transition: 200ms ease-in;
+}
+
+/** Contact Form **/
+
+.form{
+    font-family: "Outfit";
+    color: #252f36;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.touch{
+    font-size: 64px;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 40px;
+    line-height: 0.75;
+    width: fit-content;
+    position: relative;
+}
+
+.touch::after{
+    content: '';
+    background: #000000;
+    position: absolute;
+    bottom: 35%;
+    left: 0;
+    height: 3px;
+    width: 100%;
+}
+
+input{
+    border-radius: 3px;
+    border-width: 5px;
+    border-style:solid;
+    border-color: #56c1ff;
+    margin-bottom: 5px;
+    width: 40%;
+    padding: 20px;
+    font-size: 24px;
+}
+
+textarea{
+    font-family: "Outfit";
+    color: #252f36;
+    border-radius: 3px;
+    border-width: 5px;
+    border-style:solid;
+    border-color: #56c1ff;
+    margin-bottom: 15px;
+    
+    padding: 20px;
+    font-size: 24px;
+}
+
+textarea:focus-within{
+    outline: none;
+    border-color: #f0a61d;
+    border-radius: 15px;
+    transition: 250ms;
+}
+
+input:focus-within{
+    outline: none;
+    border-color: #f0a61d;
+    border-radius: 15px;
+    transition: 250ms;
+}
+
+form button {
+    font-family: "Outfit";
+    color: #252f36;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #35a0f8;
+    border: none;
+    font-size: 36px;
+    align-self: end;
+    filter: drop-shadow(5px 5px 0px #cfcfcf);
+}
+
+form button:hover{
+    transition: 200ms ease-in;
+    background-color: #f0a61d;
+    font-weight: 600;
+    filter: drop-shadow(5px 5px 0px #35a0f8);
+    
 }
