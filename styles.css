@@ -422,6 +422,8 @@ form button:hover{
     
 }
 
+/* Smaller Desktops*/
+
 @media only screen and (max-width: 1900px){
     .welcome{
         right: auto;
@@ -445,11 +447,13 @@ form button:hover{
         width: 58%;
         padding-left: 10px;
         left: auto;
+        font-size: min(24px, 2.5vmin);
     }
 
     .pfp{
         width: max(280px, 35vh);
     }
+
 
 }
 
