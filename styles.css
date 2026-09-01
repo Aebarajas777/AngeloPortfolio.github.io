@@ -421,3 +421,29 @@ form button:hover{
     filter: drop-shadow(5px 5px 0px #35a0f8);
     
 }
+
+@media only screen and (max-width: 1900px){
+    .welcome{
+        right: auto;
+        width: 70%;
+    }
+
+    .intro_long{
+        width: 70%;
+    }
+    
+    .central{
+        width: 1200px;
+    }
+
+    .intro_long_2{
+        width: 60%;
+    }
+
+    .bio{
+        width: 58%;
+        padding-left: 10px;
+        left: auto;
+    }
+
+}
