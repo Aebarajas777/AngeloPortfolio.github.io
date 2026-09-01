@@ -448,7 +448,7 @@ form button:hover{
     }
 
     .pfp{
-        width: 40vh;
+        width: max(280px, 35vh);
     }
 
 }
