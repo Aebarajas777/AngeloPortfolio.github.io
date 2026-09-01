@@ -446,4 +446,9 @@ form button:hover{
         left: auto;
     }
 
+    .pfp{
+        width: 40vh;
+    }
+
 }
+
